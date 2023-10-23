@@ -14,14 +14,12 @@ const UserSchema = new mongoose.Schema({
         Approved: {type: Number, required: true, trim: true, default: 0},
         Requested: {type: Number, required: true, trim: true, default: 0}
     },
-    SickLeave: {
-        Used: {type: Number, required: true, trim: true, default: 0}
-    },
+    SickLeave: {type: Number, required: true, trim: true, default: 0},
     CasualLeave: {
         Total: {type: Number, required: true, trim: true, default: 7},
         Remaining: {type: Number, required: true, trim: true, default: 7},
-        Used: {type: Number, required: true, trim: true, default: 0}
-    }},
+        Used: {type: Number, required: true, trim: true, default: 0}}
+    },
     {timestamps: true});
 
 

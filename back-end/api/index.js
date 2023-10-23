@@ -75,7 +75,7 @@ app.post('/logout', (req, res) => {
     res.cookie('token', '').json('ok');
 });
 
-app.get('/user/:emailAddress', async (req, res) => {
+app.get(`/user/:emailAddress`, async (req, res) => {
     const {emailAddress} = req.params;
     try {
         const userDoc = await User.findOne({emailAddress});
